@@ -162,7 +162,7 @@ std::vector<rmf_traffic::agv::Plan::Start> make_starts(
 //==============================================================================
 void RobotUpdateHandle::add_delay(rmf_traffic::Duration duration)
 {
-  _pimpl->participant.delay(std::chrono::steady_clock::now(), duration);
+  _pimpl->participant.delay(duration);
 }
 
 //==============================================================================
